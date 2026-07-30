@@ -141,13 +141,16 @@ h1 span {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: minmax(0, 1.16fr) minmax(300px, 0.84fr);
-  align-items: center;
-  gap: clamp(30px, 6vw, 76px);
+  grid-template-columns: minmax(0, 1fr);
+  justify-items: center;
+  align-items: start;
+  gap: clamp(48px, 7vw, 80px);
 }
 
 .photo-wrap {
   position: relative;
+  width: min(100%, 720px);
+  margin-inline: auto;
   transform: rotate(-1.1deg);
 }
 
@@ -221,6 +224,8 @@ h1 span {
 
 .message-card {
   position: relative;
+  width: min(100%, 720px);
+  margin-inline: auto;
   padding: clamp(30px, 5vw, 54px) clamp(25px, 4vw, 44px);
   border: 1px solid rgba(178, 147, 87, 0.48);
   border-radius: 50% 50% 8px 8px / 28px 28px 8px 8px;
