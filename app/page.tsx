@@ -62,13 +62,13 @@ export default function Home() {
         className={`music-button ${isPlaying ? "is-playing" : ""}`}
         type="button"
         onClick={toggleMusic}
-        aria-label={isPlaying ? "Jeda musik" : "Putar musik"}
+        aria-label={isPlaying ? "Jeda musik" : "Play Music"}
         aria-pressed={isPlaying}
       >
         <span className="music-icon" aria-hidden="true">
           {isPlaying ? "Ⅱ" : "♪"}
         </span>
-        <span>{isPlaying ? "Jeda musik" : "Putar musik"}</span>
+        <span>{isPlaying ? "Jeda musik" : "Play Music"}</span>
       </button>
 
       <section className="hero" aria-labelledby="page-title">
